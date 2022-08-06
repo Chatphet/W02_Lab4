@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <form action="form-echo.php" method="get">
+        USERNAME :
+        <input type="text" name="username" placeholder="Username">
+        <p><label>สาขาวิชา:</label>
+
+            <select name="dept">
+                <option value="">--Please choose an option--</option>
+                <option value="CS">CS</option>
+                <option value="IC">IC</option>
+                <option value="MA">MA</option>
+                <option value="IMI">IMI</option>
+                <option value="AS">AS</option>
+                <option value="AFET">AFET</option>
+            </select><br>
+
+            <br>
+            <input type="text" name="Name" placeholder="Name" pattern="[A-Z]+">
+            <label for="">กรอกชื่อภาษาอังกฤษ อักขระใหญ่เท่านั้น</label><br>
+
+            <br>
+            <input type="text" name="username" placeholder="xx-xxxxxx-xxxx-x" pattern="^[0-9]{2}-[0-9]{6}-[0-9]{4}-[0-9]{1}$">
+            <label for="">"รหัสนักศึกษา" มี - คั่นตามรูปแบบนี้ เช่น 61-040626-1234-5</label><br>
+
+            <br>
+            <input type="text" name="username" placeholder="xxx/xx or xx" pattern="[0-9]+[/]?[0-9]+">
+            <label for="">"บ้านเลขที่" เช่น 235/4  69</label><br>
+
+            <br>
+            <input type="text" name="username" placeholder="XXX00" pattern="[A-Z]{3}[0-9]{2}">
+            <label for="">"รหัสสินค้า 3 ตัวแรกเป็นอักขระตัวใหญ่ตามด้วยตัวเลข 2 ตัว เท่านั้น" เช่น AAA89</label><br>
+
+            <br>
+            <input type="text" name="username" placeholder="ชื่อ" pattern="[ก-๏]+$">
+            <label for="">กรอกชื่อด้วยภาษาไทยเท่านั้น</label><br>
+
+        <p><input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
